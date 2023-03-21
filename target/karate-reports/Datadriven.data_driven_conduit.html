@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("d5db50f0-641c-4bb6-aa1d-cadc5206e1c0",{name:"Dinesh"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>Datadriven.data_driven_conduit</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-12-03 05:44:12 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>create a new Article with title ManualTesting</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:23]"><span>[1.2:23]</span> <span>create a new Article with title Automation Testing</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:38]"><span>[2.1:38]</span> <span>mark favorite article Automation-Testing-99869</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:39]"><span>[2.2:39]</span> <span>mark favorite article ManualTesting-99869</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:41]"><span>[3:41]</span> <span>navigate to Profile page and verify Profile</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Datadriven/data_driven_conduit.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">conduit application using data driven</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">addarticle</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:22]</span>
+                <span class="scenario-name">create a new Article with title ManualTesting</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1260</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">17:44:08.442 &lt;&lt; lock released, cached callSingle: classpath:Datadriven/login.feature
+17:44:08.444 token details {
+  &quot;password&quot;: &quot;Test@123&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Sat, 03 Dec 2022 12:14:07 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;773c385dce675cb0-FRA&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+    ]
+  },
+  &quot;randomemailaddress&quot;: &quot;randomemail_1233orezi4y1vt@gmail.com&quot;,
+  &quot;response&quot;: {
+    &quot;user&quot;: {
+      &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+    }
+  },
+  &quot;env&quot;: &quot;QA&quot;,
+  &quot;myVarName&quot;: &quot;someValue&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;baseurlconduit&quot;: &quot;https://api.realworld.io/api/&quot;,
+  &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;,
+  &quot;username&quot;: &quot;dinesh11&quot;
+}
+ 
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Datadriven.login</div>
+      </div>
+      <div class="time-cell passed">1284</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.4">17:44:07.082 karate.env system property was: QA 
+17:44:07.087 karate.env run with new user : N 
+17:44:07.108 &gt;&gt; lock acquired, begin callSingle: classpath:Datadriven/login.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: {&quot;email&quot;: &#39;#(email)&#39;,&quot;password&quot;: &#39;#(password)&#39;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1235</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.7">17:44:07.462 request:
+1 &gt; POST https://api.realworld.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 65
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;patildinesh19@yahh.com&quot;,&quot;password&quot;:&quot;Test@123&quot;}}
+
+17:44:08.430 response time in milliseconds: 966
+1 &lt; 200
+1 &lt; Date: Sat, 03 Dec 2022 12:14:07 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 773c385dce675cb0-FRA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;patildinesh19@yahh.com&quot;,&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.9">17:44:08.434 [print] {
+  &quot;user&quot;: {
+    &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+    &quot;username&quot;: &quot;dinesh11&quot;,
+    &quot;bio&quot;: null,
+    &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = response.user.username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;USERNAME is ==&gt;&#39; ,username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.12">17:44:08.439 [print] USERNAME is ==&gt; dinesh11 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.6.0.call">
+    <div class="step-container" id="1.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;TOKEN ==&gt;: &#39;, token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6.0.call.0.13">17:44:08.440 [print] TOKEN ==&gt;:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;articles/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Access token is :&#39; ,accesstoken1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">17:44:08.452 [print] Access token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers {Accept: &#39;application/json&#39; ,Authorization:&#39;#(&quot;Bearer &quot;+accesstoken1)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;article&quot;: {&quot;tagList&quot;: [&#39;#(taglist)&#39;],&quot;title&quot;: &#39;#(title)&#39;,&quot;description&quot;: &#39;#(description)&#39;,&quot;body&quot;: &#39;#(body)&#39;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1249</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">17:44:08.458 request:
+2 &gt; POST https://api.realworld.io/api/articles
+2 &gt; Accept: application/json
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 135
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;tagList&quot;:[&quot;QA&quot;],&quot;title&quot;:&quot;ManualTesting&quot;,&quot;description&quot;:&quot;Manual testing with black box testing&quot;,&quot;body&quot;:&quot;Black box testing&quot;}}
+
+17:44:09.703 response time in milliseconds: 1245
+2 &lt; 200
+2 &lt; Date: Sat, 03 Dec 2022 12:14:08 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;191-F7wFNSt06TufIerSS2pN5MBDZiQ&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=I4dXwoEgU0PYK2AQyMOStedrOte0ZQ7IMZn2HVj0%2F3BPlw8GztSXNUKamgX5MI4poyeiKX%2BNEktj0ZJ6y%2FgQf39TnHKUOPBrXU5tJ8xaPgCsKRSmBj6jz74CL84ZMgOUIuWn&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 773c38665dd86903-FRA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;slug&quot;:&quot;ManualTesting-99869&quot;,&quot;title&quot;:&quot;ManualTesting&quot;,&quot;description&quot;:&quot;Manual testing with black box testing&quot;,&quot;body&quot;:&quot;Black box testing&quot;,&quot;tagList&quot;:[&quot;QA&quot;],&quot;createdAt&quot;:&quot;2022-12-03T12:14:08.547Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-03T12:14:08.547Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def title = response.article.slug</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">17:44:09.707 [print] {
+  &quot;article&quot;: {
+    &quot;slug&quot;: &quot;ManualTesting-99869&quot;,
+    &quot;title&quot;: &quot;ManualTesting&quot;,
+    &quot;description&quot;: &quot;Manual testing with black box testing&quot;,
+    &quot;body&quot;: &quot;Black box testing&quot;,
+    &quot;tagList&quot;: [
+      &quot;QA&quot;
+    ],
+    &quot;createdAt&quot;: &quot;2022-12-03T12:14:08.547Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-12-03T12:14:08.547Z&quot;,
+    &quot;favorited&quot;: false,
+    &quot;favoritesCount&quot;: 0,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Title ::&#39;, title</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">17:44:09.707 [print] Title :: ManualTesting-99869 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">addarticle</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:23]</span>
+                <span class="scenario-name">create a new Article with title Automation Testing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>659</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.6">17:44:09.721 karate.env system property was: QA 
+17:44:09.722 karate.env run with new user : N 
+17:44:09.724 token details {
+  &quot;password&quot;: &quot;Test@123&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Sat, 03 Dec 2022 12:14:07 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;773c385dce675cb0-FRA&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+    ]
+  },
+  &quot;randomemailaddress&quot;: &quot;randomemail_1233orezi4y1vt@gmail.com&quot;,
+  &quot;response&quot;: {
+    &quot;user&quot;: {
+      &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+    }
+  },
+  &quot;env&quot;: &quot;QA&quot;,
+  &quot;myVarName&quot;: &quot;someValue&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;baseurlconduit&quot;: &quot;https://api.realworld.io/api/&quot;,
+  &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;,
+  &quot;username&quot;: &quot;dinesh11&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;articles/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Access token is :&#39; ,accesstoken1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.11">17:44:09.727 [print] Access token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers {Accept: &#39;application/json&#39; ,Authorization:&#39;#(&quot;Bearer &quot;+accesstoken1)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;article&quot;: {&quot;tagList&quot;: [&#39;#(taglist)&#39;],&quot;title&quot;: &#39;#(title)&#39;,&quot;description&quot;: &#39;#(description)&#39;,&quot;body&quot;: &#39;#(body)&#39;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">654</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">17:44:09.729 request:
+1 &gt; POST https://api.realworld.io/api/articles
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 134
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;tagList&quot;:[&quot;QA&quot;],&quot;title&quot;:&quot;Automation Testing&quot;,&quot;description&quot;:&quot;Automation testing with selenium&quot;,&quot;body&quot;:&quot;Selenium Testing&quot;}}
+
+17:44:10.380 response time in milliseconds: 650
+1 &lt; 200
+1 &lt; Date: Sat, 03 Dec 2022 12:14:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;195-U0ou3O9/iYGQKQMIE7EITcE71y4&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=bo9A12Wyh11QcsLwLS6aW1HayEFVFXxMFXxdzwWG6wiZ41kh47BGDl1ZDGdvo76dUC%2FyzA3yjsGUcTDhwKrorAGFbg%2FvrbPxOOHuJ8IooZf7%2FSXURZQ5jZ2i20mzKMhZlBkV&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 773c386abdae691f-FRA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;slug&quot;:&quot;Automation-Testing-99869&quot;,&quot;title&quot;:&quot;Automation Testing&quot;,&quot;description&quot;:&quot;Automation testing with selenium&quot;,&quot;body&quot;:&quot;Selenium Testing&quot;,&quot;tagList&quot;:[&quot;QA&quot;],&quot;createdAt&quot;:&quot;2022-12-03T12:14:09.229Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-03T12:14:09.229Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def title = response.article.slug</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.17">17:44:10.383 [print] {
+  &quot;article&quot;: {
+    &quot;slug&quot;: &quot;Automation-Testing-99869&quot;,
+    &quot;title&quot;: &quot;Automation Testing&quot;,
+    &quot;description&quot;: &quot;Automation testing with selenium&quot;,
+    &quot;body&quot;: &quot;Selenium Testing&quot;,
+    &quot;tagList&quot;: [
+      &quot;QA&quot;
+    ],
+    &quot;createdAt&quot;: &quot;2022-12-03T12:14:09.229Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-12-03T12:14:09.229Z&quot;,
+    &quot;favorited&quot;: false,
+    &quot;favoritesCount&quot;: 0,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Title ::&#39;, title</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.18">17:44:10.386 [print] Title :: Automation-Testing-99869 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:38]</span>
+                <span class="scenario-name">mark favorite article Automation-Testing-99869</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>698</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">17:44:10.396 karate.env system property was: QA 
+17:44:10.397 karate.env run with new user : N 
+17:44:10.400 token details {
+  &quot;password&quot;: &quot;Test@123&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Sat, 03 Dec 2022 12:14:07 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;773c385dce675cb0-FRA&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+    ]
+  },
+  &quot;randomemailaddress&quot;: &quot;randomemail_1233orezi4y1vt@gmail.com&quot;,
+  &quot;response&quot;: {
+    &quot;user&quot;: {
+      &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+    }
+  },
+  &quot;env&quot;: &quot;QA&quot;,
+  &quot;myVarName&quot;: &quot;someValue&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;baseurlconduit&quot;: &quot;https://api.realworld.io/api/&quot;,
+  &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;,
+  &quot;username&quot;: &quot;dinesh11&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#pass variable in path parameter</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;articles/Automation-Testing-99869/favorite&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers {Accept: &#39;application/json&#39; ,Authorization:&#39;#(&quot;Bearer &quot;+accesstoken1)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#pass empty request body</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">682</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">17:44:10.412 request:
+1 &gt; POST https://api.realworld.io/api/articles/Automation-Testing-99869/favorite
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+17:44:11.089 response time in milliseconds: 676
+1 &lt; 200
+1 &lt; Date: Sat, 03 Dec 2022 12:14:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;2a3-dqCy8XikdQzLaWhMh52ddjISAow&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=bg2t2pkKhDQppNLDBLfFUqfwj1AikJYiaQPJwBbpwJ%2FYmPH2RzIF8K9xbtr0jni%2FIuBiCwI5fcN7CFMQavhGY38LOzENOkzx6qaFEiBKioC1Y0ZMH2O2uAUL%2BdYjqUxDnfXM&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 773c386efc835be5-FRA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;id&quot;:168489,&quot;slug&quot;:&quot;Automation-Testing-99869&quot;,&quot;title&quot;:&quot;Automation Testing&quot;,&quot;description&quot;:&quot;Automation testing with selenium&quot;,&quot;body&quot;:&quot;Selenium Testing&quot;,&quot;createdAt&quot;:&quot;2022-12-03T12:14:09.229Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-03T12:14:09.229Z&quot;,&quot;authorId&quot;:99869,&quot;tagList&quot;:[&quot;QA&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritedBy&quot;:[{&quot;id&quot;:99869,&quot;email&quot;:&quot;patildinesh19@yahh.com&quot;,&quot;username&quot;:&quot;dinesh11&quot;,&quot;password&quot;:&quot;$2a$10$bR3KS.qOaa9WVh2XgC1JgOm25tjwQ/XjAgVZN3g2KST9gxjxTEyWi&quot;,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;bio&quot;:null,&quot;demo&quot;:false}],&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.33">17:44:11.091 [print] {
+  &quot;article&quot;: {
+    &quot;id&quot;: 168489,
+    &quot;slug&quot;: &quot;Automation-Testing-99869&quot;,
+    &quot;title&quot;: &quot;Automation Testing&quot;,
+    &quot;description&quot;: &quot;Automation testing with selenium&quot;,
+    &quot;body&quot;: &quot;Selenium Testing&quot;,
+    &quot;createdAt&quot;: &quot;2022-12-03T12:14:09.229Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-12-03T12:14:09.229Z&quot;,
+    &quot;authorId&quot;: 99869,
+    &quot;tagList&quot;: [
+      &quot;QA&quot;
+    ],
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    },
+    &quot;favoritedBy&quot;: [
+      {
+        &quot;id&quot;: 99869,
+        &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+        &quot;username&quot;: &quot;dinesh11&quot;,
+        &quot;password&quot;: &quot;$2a$10$bR3KS.qOaa9WVh2XgC1JgOm25tjwQ/XjAgVZN3g2KST9gxjxTEyWi&quot;,
+        &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+        &quot;bio&quot;: null,
+        &quot;demo&quot;: false
+      }
+    ],
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.article.favorited == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:39]</span>
+                <span class="scenario-name">mark favorite article ManualTesting-99869</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>663</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.6">17:44:11.111 karate.env system property was: QA 
+17:44:11.111 karate.env run with new user : N 
+17:44:11.112 token details {
+  &quot;password&quot;: &quot;Test@123&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Sat, 03 Dec 2022 12:14:07 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;773c385dce675cb0-FRA&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+    ]
+  },
+  &quot;randomemailaddress&quot;: &quot;randomemail_1233orezi4y1vt@gmail.com&quot;,
+  &quot;response&quot;: {
+    &quot;user&quot;: {
+      &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+    }
+  },
+  &quot;env&quot;: &quot;QA&quot;,
+  &quot;myVarName&quot;: &quot;someValue&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;baseurlconduit&quot;: &quot;https://api.realworld.io/api/&quot;,
+  &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;,
+  &quot;username&quot;: &quot;dinesh11&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#pass variable in path parameter</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;articles/ManualTesting-99869/favorite&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers {Accept: &#39;application/json&#39; ,Authorization:&#39;#(&quot;Bearer &quot;+accesstoken1)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#pass empty request body</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">660</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.31">17:44:11.115 request:
+1 &gt; POST https://api.realworld.io/api/articles/ManualTesting-99869/favorite
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+17:44:11.772 response time in milliseconds: 657
+1 &lt; 200
+1 &lt; Date: Sat, 03 Dec 2022 12:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;29f-yp4s6qKUCRJuBKg+Vhi1e4l9ALQ&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=YSKMLJRTb0fWu0f7Vn0jMQ9bwlrSnrxAuEQKDWewo9O0qyQrd3oawGXfe6pYm0EskRWXDX6PwubIjdPzQ2lMCDLxjuc02zeKFvYvgl5%2FWYwOjV8OwOwpLiheZQ5YXD%2B9g8g4&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 773c38735bf19b33-FRA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;id&quot;:168488,&quot;slug&quot;:&quot;ManualTesting-99869&quot;,&quot;title&quot;:&quot;ManualTesting&quot;,&quot;description&quot;:&quot;Manual testing with black box testing&quot;,&quot;body&quot;:&quot;Black box testing&quot;,&quot;createdAt&quot;:&quot;2022-12-03T12:14:08.547Z&quot;,&quot;updatedAt&quot;:&quot;2022-12-03T12:14:08.547Z&quot;,&quot;authorId&quot;:99869,&quot;tagList&quot;:[&quot;QA&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritedBy&quot;:[{&quot;id&quot;:99869,&quot;email&quot;:&quot;patildinesh19@yahh.com&quot;,&quot;username&quot;:&quot;dinesh11&quot;,&quot;password&quot;:&quot;$2a$10$bR3KS.qOaa9WVh2XgC1JgOm25tjwQ/XjAgVZN3g2KST9gxjxTEyWi&quot;,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;bio&quot;:null,&quot;demo&quot;:false}],&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.33">17:44:11.775 [print] {
+  &quot;article&quot;: {
+    &quot;id&quot;: 168488,
+    &quot;slug&quot;: &quot;ManualTesting-99869&quot;,
+    &quot;title&quot;: &quot;ManualTesting&quot;,
+    &quot;description&quot;: &quot;Manual testing with black box testing&quot;,
+    &quot;body&quot;: &quot;Black box testing&quot;,
+    &quot;createdAt&quot;: &quot;2022-12-03T12:14:08.547Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-12-03T12:14:08.547Z&quot;,
+    &quot;authorId&quot;: 99869,
+    &quot;tagList&quot;: [
+      &quot;QA&quot;
+    ],
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    },
+    &quot;favoritedBy&quot;: [
+      {
+        &quot;id&quot;: 99869,
+        &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+        &quot;username&quot;: &quot;dinesh11&quot;,
+        &quot;password&quot;: &quot;$2a$10$bR3KS.qOaa9WVh2XgC1JgOm25tjwQ/XjAgVZN3g2KST9gxjxTEyWi&quot;,
+        &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+        &quot;bio&quot;: null,
+        &quot;demo&quot;: false
+      }
+    ],
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.article.favorited == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:41]</span>
+                <span class="scenario-name">navigate to Profile page and verify Profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>733</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseurlconduit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">17:44:11.784 karate.env system property was: QA 
+17:44:11.785 karate.env run with new user : N 
+17:44:11.787 token details {
+  &quot;password&quot;: &quot;Test@123&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Sat, 03 Dec 2022 12:14:07 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;X-Powered-By&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Etag&quot;: [
+      &quot;W/\&quot;15c-Aw1GvEhrf3l6C0hQYuMtJxdMLkQ\&quot;&quot;
+    ],
+    &quot;Via&quot;: [
+      &quot;1.1 vegur&quot;
+    ],
+    &quot;CF-Cache-Status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Report-To&quot;: [
+      &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4BmYMZY1hR2gMab9wKblCidSv1eYp9haqurYcQwi2Ig1BGzZQO1IBtKgLHcgYsLrgeML7HmE2Z7XZ%2FCdMuSl8kfy7jpiK23UdrbMU6J3PpPE%2FwuudKZs0BMxo80zCA%2FQC4vV\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;NEL&quot;: [
+      &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;773c385dce675cb0-FRA&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+    ]
+  },
+  &quot;randomemailaddress&quot;: &quot;randomemail_1233orezi4y1vt@gmail.com&quot;,
+  &quot;response&quot;: {
+    &quot;user&quot;: {
+      &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+      &quot;username&quot;: &quot;dinesh11&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;
+    }
+  },
+  &quot;env&quot;: &quot;QA&quot;,
+  &quot;myVarName&quot;: &quot;someValue&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;baseurlconduit&quot;: &quot;https://api.realworld.io/api/&quot;,
+  &quot;email&quot;: &quot;patildinesh19@yahh.com&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdGlsZGluZXNoMTlAeWFoaC5jb20iLCJ1c2VybmFtZSI6ImRpbmVzaDExIiwiaWF0IjoxNjcwMDY5NjQ3LCJleHAiOjE2NzUyNTM2NDd9.FvW0l1z10EnWiJpdWfI9CG6RhoeDufahDkucJ8_sl3c&quot;,
+  &quot;username&quot;: &quot;dinesh11&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/profiles/&#39; ,userdetails</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">712</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">17:44:11.807 request:
+1 &gt; GET https://api.realworld.io/api/profiles/dinesh11
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:44:12.516 response time in milliseconds: 709
+1 &lt; 200
+1 &lt; Date: Sat, 03 Dec 2022 12:14:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;7c-7PGWtf5YMZhy/jLE4u21wO0p+sc&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ti4rQZ6Yo5dbRD50O3%2Fk%2BDGvyKR8Lc%2BLzz7%2BFmzx0CZjSPWe0ohRqeeP5DYNRr%2B5BayhL3%2Bl0zBfbaj5tjV6CgB6tXagaNryZunLpkAdVJxKKzHrkf9n%2F%2B%2For8FsXe06i2Ok&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 773c38782c856934-FRA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;profile&quot;:{&quot;username&quot;:&quot;dinesh11&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">17:44:12.519 [print] {
+  &quot;profile&quot;: {
+    &quot;username&quot;: &quot;dinesh11&quot;,
+    &quot;bio&quot;: null,
+    &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+    &quot;following&quot;: false
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#match variable value with response value</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.profile.username contains &#39;#(userdetails)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

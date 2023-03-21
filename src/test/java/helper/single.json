@@ -1,0 +1,39 @@
+{
+	"data": [
+		{
+			"customerID": 1,
+			"customername": "selenium",
+			"purchesdate": "2022-11-06",
+			"amount": 120,
+			"location": "Africa"
+		},
+		{
+			"customerID": 2,
+			"customername": "Protractor",
+			"purchesdate": "2022-11-06",
+			"amount": 45,
+			"location": "Africa"
+		},
+		{
+			"customerID": 3,
+			"customername": "Appium",
+			"purchesdate": "2022-11-06",
+			"amount": 99,
+			"location": "Asia"
+		},
+		{
+			"customerID": 4,
+			"customername": "WebServices",
+			"purchesdate": "2022-11-06",
+			"amount": 21,
+			"location": "Asia"
+		},
+		{
+			"customerID": 5,
+			"customername": "Jmeter",
+			"purchesdate": "2022-11-06",
+			"amount": 76,
+			"location": "Asia"
+		}
+	]
+}
